@@ -1,0 +1,35 @@
+{
+  "profit_margins": {
+    "Latte": 2.5,
+    "Americano": 2.0,
+    "Hot Chocolate": 2.0,
+    "Espresso": 1.7,
+    "Cappuccino": 2.2,
+    "Cortado": 2.3,
+    "default": 2.0
+  },
+  "data_path": "upload/index_1.csv",
+  "sales_prediction": {
+    "training_days": 365,
+    "order": [1, 1, 1],
+    "seasonal_order": [1, 1, 1, 12]
+  },
+  "coffee_prediction": {
+    "months_back": 12,
+    "weeks_back": 4,
+    "order": [1, 1, 1],
+    "seasonal_order": [1, 1, 1, 12]
+  },
+  "promotion": {
+    "rolling_window": 7
+  },
+  "scenario_analysis": {
+    "rolling_windows": [3, 7, 14, 30],
+    "profit_multipliers": {
+      "base": 1.0,
+      "lowered": 0.8,
+      "raised": 1.2
+    }
+  }
+}
+
