@@ -10,8 +10,10 @@ from pathlib import Path
 scripts_dir = Path(__file__).parent / "scripts"
 sys.path.insert(0, str(scripts_dir))
 
-from scripts.main import main
+from promotional_analysis.promotional_analysis_main import promotional_analsysis_main
+from eda_milk_ratio.eda_milk_ratio_main import eda_milk_main
 
 if __name__ == "__main__":
-    main()
+    promotional_analsysis_main()
+    eda_milk_main()
 

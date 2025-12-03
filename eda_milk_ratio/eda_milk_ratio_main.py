@@ -1,10 +1,10 @@
 import pandas as pd
 
-from eda_milk_ratio_deps.milk_ratio_calculations import determine_milk_ratio
-from eda_milk_ratio_deps.milk_ratio_scatterplot import milk_ratio_scatter
-from eda_milk_ratio_deps.milk_ratio_heatmap import milk_ratio_heatmap
+from .eda_milk_ratio_deps.milk_ratio_calculations import determine_milk_ratio
+from .eda_milk_ratio_deps.milk_ratio_scatterplot import milk_ratio_scatter
+from .eda_milk_ratio_deps.milk_ratio_heatmap import milk_ratio_heatmap
 
-def main(data_path: str = None):
+def eda_milk_main(data_path: str = None):
     '''
     Main execution for milk ratio EDA.
 
@@ -26,10 +26,16 @@ def main(data_path: str = None):
     df["milk_ratio"] = df["coffee_name"].apply(determine_milk_ratio)
 
     # Calculate and create scatterplot for milk
+    print("--------------------")
+    print("Plotting Average Milk Ratio by Hour")
+    print("--------------------")
     milk_ratio_scatter(df)
 
     # Calculate and create heatmap for milk 
+    print("--------------------")
+    print("Plotting Average Milk Ratio Heatmap")
+    print("--------------------")
     milk_ratio_heatmap(df)
 
 if __name__ == "__main__":
-    main()
+    eda_milk_main()

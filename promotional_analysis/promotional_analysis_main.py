@@ -40,7 +40,7 @@ except ImportError:
     from config_loader import load_config
 
 
-def main(data_path: str = None, config_path: str = None):
+def promotional_analsysis_main(data_path: str = None, config_path: str = None):
     """
     Main execution function.
     
