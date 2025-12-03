@@ -4,6 +4,9 @@ Project for ECE143, Data Visualization
 ## How to Run All Analyses/Visualizations 
 
 First ensure all dependencies are installed through `requirements.txt`.
+```
+pip install -r requirements.txt
+```
 
 Next, to execute the all components of the analysis, run the following command from the project root directory:
 
@@ -14,6 +17,18 @@ python run_analysis.py
 Observe the following sections for more granular control of specific visualizations/analysis.
 
 ## File Structure:
+
+## Third Party Dependencies:
+```
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- statsmodels
+- scipy
+- scikit-learn
+- holidays
+
 
 ## Milk Ratio EDA
 From within `/eda_mik_ratio`, you can run the following command.
