@@ -1,5 +1,5 @@
 # ECE143_Group_15_Project
-Project for ECE143, Data Visualization
+Project for ECE143, Data Visualization.  A link to a recorded presentation can be found [here](https://www.youtube.com/watch?v=Bdt3se5QOy8&feature=youtu.be).
 
 ## How to Run All Analyses/Visualizations 
 
