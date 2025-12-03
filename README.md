@@ -1,8 +1,7 @@
 # ECE143_Group_15_Project
 Project for ECE143, Data Visualization
 
-
-## How to Run entire Analysis 
+## How to Run All Analyses/Visualizations 
 
 First ensure all dependencies are installed through `requirements.txt`.
 
@@ -14,17 +13,14 @@ python run_analysis.py
 
 Observe the following sections for more granular control of specific visualizations/analysis.
 
+## File Structure:
+
 ## Milk Ratio EDA
 From within `/eda_mik_ratio`, you can run the following command.
 
 ```bash
 python -m eda_milk_ratio_main.py
 ```
-
-
-
-
-
 ## user_analysis
 
 Coffee type prediction pipeline extracted from `upload/model_user.ipynb`.
