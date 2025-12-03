@@ -2,15 +2,27 @@
 Project for ECE143, Data Visualization
 
 
-## How to Run the Sales and Promotion Analysis
+## How to Run entire Analysis 
 
-To execute the coffee sales and promotion analysis, run the following command from the project root directory:
+First ensure all dependencies are installed through `requirements.txt`.
+
+Next, to execute the all components of the analysis, run the following command from the project root directory:
 
 ```
 python run_analysis.py
 ```
 
-This will process the sales dataset, generate predictions, and provide visualizations and recommendations based on the most recent data. Ensure all required dependencies are installed before running the script.
+Observe the following sections for more granular control of specific visualizations/analysis.
+
+## Milk Ratio EDA
+From within `/eda_mik_ratio`, you can run the following command.
+
+```bash
+python -m eda_milk_ratio_main.py
+```
+
+
+
 
 
 ## user_analysis
