@@ -1,8 +1,13 @@
 import pandas as pd
 
-from .eda_milk_ratio_deps.milk_ratio_calculations import determine_milk_ratio
-from .eda_milk_ratio_deps.milk_ratio_scatterplot import milk_ratio_scatter
-from .eda_milk_ratio_deps.milk_ratio_heatmap import milk_ratio_heatmap
+try:
+    from .eda_milk_ratio_deps.milk_ratio_calculations import determine_milk_ratio
+    from .eda_milk_ratio_deps.milk_ratio_scatterplot import milk_ratio_scatter
+    from .eda_milk_ratio_deps.milk_ratio_heatmap import milk_ratio_heatmap
+except ImportError:
+    from eda_milk_ratio_deps.milk_ratio_calculations import determine_milk_ratio
+    from eda_milk_ratio_deps.milk_ratio_scatterplot import milk_ratio_scatter
+    from eda_milk_ratio_deps.milk_ratio_heatmap import milk_ratio_heatmap
 
 def eda_milk_main(data_path: str = None):
     '''
