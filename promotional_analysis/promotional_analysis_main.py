@@ -176,8 +176,3 @@ def promotional_analsysis_main(data_path: str = None, config_path: str = None):
 
 if __name__ == "__main__":
     promotional_analsysis_main()
-
-    # To run analysis, execute the following command from the project root directory:
-    # 
-    #     python run_analysis.py
-    # 
