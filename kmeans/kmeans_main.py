@@ -20,7 +20,7 @@ def kmeans_main(data_path: str = None):
     
     # Use data path if not provided
     if data_path is None:
-        data_path = 'index_1.csv'
+        data_path = 'upload/index_1.csv'
 
     print(f"Target data file: {data_path}")
 

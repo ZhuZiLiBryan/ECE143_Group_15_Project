@@ -5,7 +5,7 @@ try:
 except ImportError:
     from eda_hoursOfDay import load_and_preprocess_data, plot_transactions_by_hour
 
-def eda_hours_main(data_path: str = None):
+def eda_hourly_transactions_main(data_path: str = None):
     '''
     Main execution for Hourly Transactions EDA.
 
@@ -18,7 +18,7 @@ def eda_hours_main(data_path: str = None):
     '''
     
     if data_path is None:
-        data_path = 'index_1.csv'
+        data_path = 'upload/index_1.csv'
 
     print(f"Target data file: {data_path}")
 
@@ -30,4 +30,4 @@ def eda_hours_main(data_path: str = None):
         plot_transactions_by_hour(df)
 
 if __name__ == "__main__":
-    eda_hours_main()
+    eda_hourly_transactions_main()
