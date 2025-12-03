@@ -1,7 +1,7 @@
 import pandas as pd
 
 try:
-    from .eda_milk_ratio_deps.milk_ratio_calculations import determine_milk_ratio
+    from .eda_milk_ratio_deps.milk_ratio_calculations import determine_milk_ratio, add_hour_of_day
     from .eda_milk_ratio_deps.milk_ratio_scatterplot import milk_ratio_scatter
     from .eda_milk_ratio_deps.milk_ratio_heatmap import milk_ratio_heatmap
 except ImportError:
@@ -23,9 +23,12 @@ def eda_milk_main(data_path: str = None):
 
     # Use data path from config if not provided
     if data_path is None:
-        data_path = 'Coffe_sales.csv'
+        data_path = 'upload/index_1.csv'
 
     df = pd.read_csv(data_path)
+
+    # Classify observations thorugh the hour of day
+    add_hour_of_day(df)
 
     # Calculate milk ratios and append to dataframe
     df["milk_ratio"] = df["coffee_name"].apply(determine_milk_ratio)

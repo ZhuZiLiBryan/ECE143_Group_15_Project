@@ -1,9 +1,10 @@
+import pandas as pd
+
 def determine_milk_ratio(drink):
     '''
     Helper function to define milk ratios and return corresponding milk ratios.
 
     Params:
-    -------
     drink : str
         Type of drink
     
@@ -24,5 +25,23 @@ def determine_milk_ratio(drink):
 
     milk, coffee = milk_map.get(drink, (0.0, 1.0))
     return milk / (milk + coffee)
+
+def add_hour_of_day(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Add an 'hour_of_day' column extracted from the 'datetime' column.
+
+    Params:
+        df (pd.DataFrame): 
+            Input DataFrame
+
+    Returns:
+        pd.DataFrame:
+            new 'hour_of_day' column
+    """
+
+    df["datetime"] = pd.to_datetime(df["datetime"])
+
+    # Extract hour
+    df["hour_of_day"] = df["datetime"].dt.hour
 
 

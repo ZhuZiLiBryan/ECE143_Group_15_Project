@@ -1,3 +1,3 @@
 __all__ = [
-    "eda_hours_main"
-]
+    "eda_hourly_transactions_main"
+]   
