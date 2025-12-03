@@ -40,7 +40,6 @@ ECE143_Group_15_Project/
 ├── run_analysis.py                    # Main entry point to run all analyses
 │
 ├── all_visualizations.ipynb          # Jupyter notebook for all visualizations
-├── mg.ipynb                          # Additional notebook
 │
 ├── eda_Hours0fDay/                   # Hour of day analysis
 │   ├── __init__.py
