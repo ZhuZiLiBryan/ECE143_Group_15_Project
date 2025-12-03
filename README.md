@@ -30,6 +30,91 @@ Observe the following sections for more granular control of specific visualizati
 - holidays
 ```
 
+## File Structure
+
+```
+ECE143_Group_15_Project/
+│
+├── README.md                          # Project documentation
+├── requirements.txt                   # Python dependencies
+├── config.json                        # Configuration file
+├── run_analysis.py                    # Main entry point to run all analyses
+│
+├── all_visualizations.ipynb          # Jupyter notebook for all visualizations
+├── mg.ipynb                          # Additional notebook
+├── output.png                        # Output image
+│
+├── eda_Hours0fDay/                   # Hour of day analysis
+│   ├── __init__.py
+│   ├── eda_hours_main.py             # Main entry point
+│   └── eda_hoursOfDay.py             # Hourly transaction analysis
+│
+├── eda_milk_ratio/                   # Milk ratio exploratory data analysis
+│   ├── __pycache__/
+│   ├── eda_milk_ratio_main.py        # Main entry point
+│   └── eda_milk_ratio_deps/          # Milk ratio dependencies
+│       ├── __init__.py
+│       ├── __pycache__/
+│       ├── milk_ratio_calculations.py # Milk ratio calculations
+│       ├── milk_ratio_heatmap.py     # Heatmap visualization
+│       └── milk_ratio_scatterplot.py # Scatter plot visualization
+│
+├── eda_weekday_weekend/              # Weekday/Weekend/Holiday analysis
+│   ├── __init__.py
+│   ├── __pycache__/
+│   ├── config.py                     # Configuration settings
+│   ├── data_loader.py                # Data loading and preprocessing
+│   └── plots/                        # Visualization modules
+│       ├── __init__.py
+│       ├── __pycache__/
+│       ├── coffee.py                 # Coffee popularity plots
+│       ├── order_value.py            # Order value statistics
+│       ├── sales.py                  # Sales comparison plots
+│       └── style.py                  # Plot styling utilities
+│
+├── kmeans/                           # K-Means clustering analysis
+│   ├── kmeans_main.py                # Main entry point
+│   └── kmeans.py                     # K-Means clustering implementation
+│
+├── promotional_analysis/             # Promotional analysis and predictions
+│   ├── __init__.py
+│   ├── __pycache__/
+│   ├── promotional_analysis_main.py  # Main entry point
+│   ├── config_loader.py              # Configuration loader
+│   ├── data_loader.py                # Data loading utilities
+│   ├── coffee_prediction.py          # Coffee sales prediction
+│   ├── sales_prediction.py           # Sales forecasting (SARIMAX)
+│   ├── promotion_recommendation.py   # Promotion recommendation engine
+│   └── visualization.py              # Visualization utilities
+│
+├── user_analysis/                    # User behavior analysis and prediction
+│   ├── __init__.py
+│   ├── __pycache__/
+│   ├── main.py                       # Main pipeline entry point
+│   ├── config.py                     # Configuration settings
+│   ├── data_loader.py                # Data loading utilities
+│   ├── visualization.py              # Feature importance visualization
+│   ├── features/                     # Feature engineering modules
+│   │   ├── __init__.py
+│   │   ├── __pycache__/
+│   │   ├── temporal.py               # Temporal feature engineering
+│   │   ├── customer.py               # Customer history features
+│   │   ├── price.py                  # Price-related features
+│   │   └── encoding.py               # Categorical encoding
+│   └── models/                       # Machine learning models
+│       ├── __init__.py
+│       ├── __pycache__/
+│       ├── decision_tree.py          # Decision Tree classifier
+│       ├── random_forest.py          # Random Forest classifier
+│       └── evaluation.py             # Model evaluation metrics
+│
+└── upload/                           # Data and output files
+    ├── index_1.csv                   # Main dataset
+    ├── feature_importance.png        # Feature importance visualization
+    ├── kmeans_elbow_plot.png         # K-Means elbow plot
+    └── model_comparison.png          # Model comparison visualization
+```
+
 ## Milk Ratio EDA
 From within `/eda_mik_ratio`, you can run the following command.
 
