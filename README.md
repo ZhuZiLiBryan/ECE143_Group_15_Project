@@ -41,7 +41,6 @@ ECE143_Group_15_Project/
 │
 ├── all_visualizations.ipynb          # Jupyter notebook for all visualizations
 ├── mg.ipynb                          # Additional notebook
-├── output.png                        # Output image
 │
 ├── eda_Hours0fDay/                   # Hour of day analysis
 │   ├── __init__.py
