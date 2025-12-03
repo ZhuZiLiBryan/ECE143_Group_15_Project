@@ -28,7 +28,7 @@ Observe the following sections for more granular control of specific visualizati
 - scipy
 - scikit-learn
 - holidays
-
+```
 
 ## Milk Ratio EDA
 From within `/eda_mik_ratio`, you can run the following command.
