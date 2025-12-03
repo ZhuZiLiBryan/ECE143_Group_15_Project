@@ -14,10 +14,14 @@ from promotional_analysis.promotional_analysis_main import promotional_analsysis
 from eda_milk_ratio.eda_milk_ratio_main import eda_milk_main
 from user_analysis import user_analysis_main
 from eda_weekday_weekend import eda_weekday_weekend_main
+from kmeans import kmeans_main
+from eda_Hours0fDay import eda_hours_main
 
 if __name__ == "__main__":
-    eda_milk_main()
-    eda_weekday_weekend_main()
     promotional_analsysis_main()
+    eda_milk_main()
     user_analysis_main()
+    eda_weekday_weekend_main()
+    kmeans_main()
+    eda_hours_main()
 
