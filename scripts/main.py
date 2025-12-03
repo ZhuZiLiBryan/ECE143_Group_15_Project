@@ -4,7 +4,7 @@ Main script for coffee sales analysis and predictions.
 
 import pandas as pd
 
-# Import modules (works both as package and standalone)
+# Import modules 
 try:
     from .data_loader import (
         load_data, preprocess_datetime, normalize_coffee_names,
@@ -177,8 +177,7 @@ def main(data_path: str = None, config_path: str = None):
 if __name__ == "__main__":
     main()
 
-    # To run the analysis, execute the following command from the project root directory:
+    # To run analysis, execute the following command from the project root directory:
     # 
     #     python run_analysis.py
     # 
-    # This will load your sales data, perform the analysis, and print results to the console.
