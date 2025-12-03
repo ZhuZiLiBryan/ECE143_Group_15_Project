@@ -108,7 +108,7 @@ ECE143_Group_15_Project/
 │       └── evaluation.py             # Model evaluation metrics
 │
 └── upload/                           # Data and output files
-    ├── index_1.csv                   # Main dataset
+    └── index_1.csv                   # Main dataset
 ```
 
 ## Milk Ratio EDA
