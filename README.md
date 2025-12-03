@@ -117,6 +117,20 @@ From within `/eda_mik_ratio`, you can run the following command.
 ```bash
 python -m eda_milk_ratio_main.py
 ```
+
+## Hourly transaction EDA
+From within `/eda_HoursOfDay`, you can run the following command.
+
+```bash
+python -m eda_hours_main.py
+```
+## Kmeans clustering
+From within `/kmenas`, you can run the following command.
+
+```bash
+python -m kmeans_main.py
+```
+
 ## user_analysis
 
 Coffee type prediction pipeline extracted from `upload/model_user.ipynb`.
