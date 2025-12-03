@@ -157,4 +157,3 @@ def plot_scenario_analysis(impact_results: dict, profit_margin_scenarios: dict,
     plt.legend(title="Drink", bbox_to_anchor=(1.05, 1), loc="upper left")
     plt.suptitle(title, y=1.02, fontsize=16)
     plt.show()
-
