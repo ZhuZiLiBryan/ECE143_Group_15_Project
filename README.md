@@ -31,7 +31,6 @@ Observe the following sections for more granular control of specific visualizati
 ```
 
 ## File Structure
-
 ```
 ECE143_Group_15_Project/
 │
@@ -110,9 +109,6 @@ ECE143_Group_15_Project/
 │
 └── upload/                           # Data and output files
     ├── index_1.csv                   # Main dataset
-    ├── feature_importance.png        # Feature importance visualization
-    ├── kmeans_elbow_plot.png         # K-Means elbow plot
-    └── model_comparison.png          # Model comparison visualization
 ```
 
 ## Milk Ratio EDA

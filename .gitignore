@@ -32,7 +32,6 @@ anaconda_projects/
 *.jpg
 *.jpeg
 *.svg
-*.pdf
 
 # === Logs and temp ===
 *.log
